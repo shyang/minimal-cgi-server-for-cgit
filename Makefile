@@ -5,5 +5,4 @@ start:
 
 link:
 	ln -svf `pwd`/cgit.rb /usr/local/Library/Formula/
-	ln -svf `pwd`/cgitrc ~/.cgitrc
 
