@@ -2,11 +2,8 @@ enable-index-links=1
 enable-log-filecount=1
 enable-log-linecount=1
 snapshots=zip tar.bz2
-root-title=My Repo's
-root-desc=a lot of staff
 local-time=1
 max-stats=year
-source-filter=/usr/local/Cellar/cgit/0.9.0.3/usr/lib/cgit/filters/syntax-highlighting.sh
-scan-path=/Users/shaohua/User/Repo
-scan-path=/Users/shaohua/Dropbox/Repos
+source-filter=./syntax-highlighting.sh
+scan-path=../..
 

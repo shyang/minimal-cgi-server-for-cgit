@@ -3,11 +3,16 @@
 import os
 
 from http.server import HTTPServer, CGIHTTPRequestHandler
-from pdb import set_trace as st
 
-os.environ['CGIT_CONFIG'] = os.path.expanduser('~/.cgitrc')
+os.environ['CGIT_CONFIG'] = 'cgitrc' # in current working directory
 
-httpd = HTTPServer(('127.0.0.1', 8000), CGIHTTPRequestHandler)
+class RequestHandler(CGIHTTPRequestHandler):
+    def is_cgi(self):
+        cgi = '/cgit.cgi'
+        self.cgi_info = cgi, self.path[len(cgi):] # setting the PATH_INFO correctly eliminates the need of URL rewriting
+        return self.path == '/' or self.path.startswith(cgi)
+
+httpd = HTTPServer(('127.0.0.1', 8000), RequestHandler)
 
 try:
     httpd.serve_forever()
