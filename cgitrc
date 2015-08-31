@@ -8,5 +8,5 @@ snapshots=zip tar.bz2
 local-time=1
 max-stats=year
 source-filter=./syntax-highlighting.sh
-scan-path=../..
+scan-path=..
 
