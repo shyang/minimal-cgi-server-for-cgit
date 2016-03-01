@@ -7,6 +7,6 @@ enable-subject-links=1
 snapshots=zip tar.bz2
 local-time=1
 max-stats=year
-source-filter=./syntax-highlighting.sh
+source-filter=filters/syntax-highlighting.py
 scan-path=..
 
