@@ -1,6 +1,6 @@
 ### Minimal CGI Server for cgit
 
-This is a cgi server (`server.py`) just for serving [cgit](https://git.zx2c4.com/cgit/).
+This is a cgi server (`server.sh`) just for serving [cgit](https://git.zx2c4.com/cgit/).
 
 `cgi-bin/cgit.cgi` is a precompiled mac 64-bit binary. (`make get-git all NO_GETTEXT=1 NO_LUA=1`)
 
