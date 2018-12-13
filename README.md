@@ -12,10 +12,10 @@ This is a cgi server (`server.sh`) just for serving [cgit](https://git.zx2c4.com
 
 ### Run
 
-Before starting, change the scan-path in cgitrc.
+Before starting, change the `scan-path`, which will be scanned for repositories, in cgitrc.
 
 $ ./server.sh
 
-Open a browser and navigate to http://127.0.0.1:8000/
+Open a browser and navigate to http://localhost:8000/
 
-![Screenshot](https://shyang.github.io/assets/cgit.png)
+![Screenshot](sample.png)
